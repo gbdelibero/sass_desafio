@@ -1,0 +1,60 @@
+/**************
+TABLET
+**************/
+
+@media (min-width: 480px) and (max-width: 1024px){
+
+    .index-grid {
+        display: grid;
+        grid-template-columns: 30% 30%;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+
+    article {
+        background-color: #191919;
+        height: 12vh;
+        /* margin: 10px; */
+        padding: 30px;
+        /* border: solid 5px #12A5E9; */
+    }
+    
+    /*portfolio*/
+    .port-grid {
+        display: inline-block;
+        grid-template-columns: 50%;
+        grid-column-gap: 25px;
+        justify-content: center;
+     
+    }
+}
+
+
+
+/**************
+SMARTPHONE
+**************/
+
+@media (max-width: 479px){
+
+    .index-grid {
+        display: grid;
+        grid-template-columns: 60%;
+        grid-column-gap: 15px;
+        grid-row-gap: 20px;
+    }
+
+    /*portfolio*/
+    .port-grid {
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+     
+    }
+
+    .port-img {
+        width: 100%;
+
+    }
+
+}
