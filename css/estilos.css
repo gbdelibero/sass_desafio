@@ -1,0 +1,197 @@
+/**************
+RESPONSIVE
+**************/
+
+/*ESTILOS GENERALES (sin media queries)*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: #4A4A49;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10pX;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #ed213a;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    margin: 5px 30px;
+}
+
+.cover-img {
+    width: 100%;
+}
+
+article {
+    background-color: #191919;
+    /*height: 12vh;*/
+    /* margin: 10px; */
+    padding: 20px;
+   
+}
+
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+
+.alineacionCentro {
+    text-align: center;
+    margin-bottom: 15pX;
+}
+
+footer {
+    background-color: #111111;
+    margin: 10px;
+}
+
+footer ul {
+    list-style-type: none;        
+}
+
+/*GRID*/
+
+.index-grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+/*portfolio*/
+.port-grid {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-column-gap: 35px;
+    justify-content: center;
+ 
+}
+
+/*FLEXBOX*/
+
+/* acerca de*/
+.acerca-flex {
+    display: flex;
+}
+
+/* hablemos*/ 
+.hablemos-flex {
+    display: flex;
+}
+
+.texto {
+    margin-right: 2rem;
+}
+
+/*footer*/
+.footer-flex div {
+    display: inline-flex;
+    margin: 30px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+/**************
+TABLET
+**************/
+
+@media (min-width: 480px) and (max-width: 1024px){
+
+    .index-grid {
+        display: grid;
+        grid-template-columns: 30% 30%;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+
+    article {
+        background-color: #191919;
+        height: 12vh;
+        /* margin: 10px; */
+        padding: 30px;
+        /* border: solid 5px #12A5E9; */
+    }
+    
+    /*portfolio*/
+    .port-grid {
+        display: inline-block;
+        grid-template-columns: 50%;
+        grid-column-gap: 25px;
+        justify-content: center;
+     
+    }
+}
+
+
+
+/**************
+SMARTPHONE
+**************/
+
+@media (max-width: 479px){
+
+    .index-grid {
+        display: grid;
+        grid-template-columns: 60%;
+        grid-column-gap: 15px;
+        grid-row-gap: 20px;
+    }
+
+    /*portfolio*/
+    .port-grid {
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+     
+    }
+
+    .port-img {
+        width: 100%;
+
+    }
+
+}
