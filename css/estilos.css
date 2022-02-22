@@ -1,3 +1,45 @@
+/*****************
+MAPS
+*****************/
+.fondo-background {
+  background-color: black; }
+
+.fondo-article {
+  background-color: #191919; }
+
+.fondo-footer {
+  background-color: #111111; }
+
+/****************
+extend y mixins
+****************/
+.socialmedia, .socialmedia-ig, .socialmedia-tw {
+  background-color: #282bec;
+  padding: 3px;
+  font-size: 15px; }
+
+.socialmedia-ig {
+  background-color: #ff28b7; }
+
+.socialmedia-tw {
+  background-color: #5aafd6; }
+
+.button {
+  width: 100px;
+  height: 20px; }
+
+/*****************
+MAPS
+*****************/
+.fondo-background {
+  background-color: black; }
+
+.fondo-article {
+  background-color: #191919; }
+
+.fondo-footer {
+  background-color: #111111; }
+
 /**************
 TABLET
 **************/
@@ -10,9 +52,7 @@ TABLET
   article {
     background-color: #191919;
     height: 12vh;
-    /* margin: 10px; */
-    padding: 30px;
-    /* border: solid 5px #12A5E9; */ }
+    padding: 30px; }
   /*portfolio*/
   .port-grid {
     display: inline-block;
@@ -84,8 +124,6 @@ main {
 
 article {
   background-color: #191919;
-  /*height: 12vh;*/
-  /* margin: 10px; */
   padding: 20px; }
 
 h3 {

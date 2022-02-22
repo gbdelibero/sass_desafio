@@ -1,0 +1,20 @@
+$fondoArticle: #191919;
+
+
+/*****************
+MAPS
+*****************/
+
+$colores:(
+        background: black,
+        article: #191919,
+        footer: #111111
+);
+
+@each $clave, $valor in $colores {
+    .fondo-#{$clave} {
+        background-color: $valor;
+    }
+
+}
+

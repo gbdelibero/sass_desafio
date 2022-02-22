@@ -1,0 +1,29 @@
+/****************
+extend y mixins
+****************/
+
+.socialmedia {
+    background-color: rgb(40, 43, 236);
+    padding: 3px;
+    font-size: 15px;
+}
+
+.socialmedia-ig {
+    @extend .socialmedia;
+    background-color: rgb(255, 40, 183);
+}
+
+.socialmedia-tw {
+    @extend .socialmedia;
+    background-color: rgb(90, 175, 214);
+}
+
+@mixin tamaño ($anchura, $altura) {
+    width: $anchura;
+    height: $altura;
+}
+
+.button {
+    @include tamaño(100px, 20px)
+
+}

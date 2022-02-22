@@ -1,5 +1,10 @@
 //IMPORT
+
+
+@import "variables";
+@import "extend-mixins";
 @import "queries";
+
 
 /*ESTILOS GENERALES*/
 
@@ -65,8 +70,6 @@ main {
 
 article {
     background-color: #191919;
-    /*height: 12vh;*/
-    /* margin: 10px; */
     padding: 20px;
    
 }

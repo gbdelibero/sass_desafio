@@ -1,3 +1,5 @@
+@import "variables";
+
 /**************
 TABLET
 **************/
@@ -12,11 +14,9 @@ TABLET
     }
 
     article {
-        background-color: #191919;
+        background-color: $fondoArticle;
         height: 12vh;
-        /* margin: 10px; */
         padding: 30px;
-        /* border: solid 5px #12A5E9; */
     }
     
     /*portfolio*/
